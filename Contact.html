@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,74 +10,71 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Insurance-Project</title>
 </head>
+
 <body>
-        
+
     <header class="big-blue-box">
-            
-        <nav class="mobile-nav">
-        
-            <div id="options">
-                <a href="index.html">Home</a>
-                <a href="#">Our offer</a>
-                <a href="#">Why us</a>
-                <a href="Contact.html" target="_blank">Contact</a>
-            </div>
 
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-                  
-        </nav>
+        <h1 class="big-header black contact-header">Oh hello there!</h1>
 
-            <h1 class="big-header black">Oh hello there!</h1>
+        <img class="dad-son" src="img/Frame.png" alt="Dad and son">
 
-            <img class="#" src="#" alt="Dad and son">
-        
     </header>
 
-    <nav class="nav-bar"></nav>
-    
+    <nav class="nav-bar">
+
+        <ul class="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Our offer</a></li>
+            <li><a href="#">Why us</a></li>
+            <li><a href="Contact.html" target="_blank">Contact</a></li>
+        </ul>
+
+    </nav>
+
     <main class="main">
-        
-        <section class="grey-box">
+
+        <section class="grey-box contact-box">
 
             <h2 class="big-header white">What's on your mind?</h2>
 
-<!-- Är det ett rätt sätt? -->
-            <form action="/action_page.php"> 
-                <label for="email" class="contact-text">Your email</label><br>
-                <input type="email" class="email" name="email">
-            </form>
+            <div class="mail">
+                <form action="#">
+                    <label for="email" class="contact-text">Your email</label><br>
+                    <input type="email" class="email" name="email">
+                </form>
+            </div>
 
-            <form action="/action_page.php"> 
-                <label for="text" class="contact-text">Your message</label><br>
-                <textarea name="message" class="message-field"
-                placeholder="Dear Insurance company..."></textarea>
-            </form>
+            <div class="message">
+                <form action="#">
+                    <label for="text" class="contact-text">Your message</label><br>
+                    <textarea name="message" class="message-field" placeholder="Dear Insurance company..."></textarea>
+                </form>
 
-            <button type="button" class="btn">SEND MESSAGE</button>
+                <button type="button" class="btn">SEND MESSAGE</button>
+
+            </div>
 
         </section>
-        
+
         <section class="address">
-            
+
             <div class="coordinates">
                 <h2 class="big-header white">Come visit us!</h2>
                 <p class="description">2219 Griffin Street | San Francisco</p>
             </div>
 
-            <div class="map">
-                <img class="pointer" src="img/Vector.png" alt="pointer">
-            </div>
-            
+            <div class="map"></div>
+
         </section>
-    
+
     </main>
 
     <footer class="footer"></footer>
-    
+
 
     <script src="main.js"></script>
 
 </body>
+
 </html>

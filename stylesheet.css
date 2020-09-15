@@ -24,6 +24,20 @@ a   {
     font-weight: 600;
 }
 
+.btn {
+    width: 129px;
+    height: 29px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 10px;
+    margin: 10% 0;
+  } 
+
+
+
 /* || Typography */
 
 .black  {
@@ -36,11 +50,6 @@ a   {
 
 .big-header {
     font-size: 45px;
-    line-height: 45px;
-}
-
-.contact-header {
-    align-self: center;
     line-height: 45px;
 }
 
@@ -61,7 +70,6 @@ a   {
 .numbers  {
     color: rgba(0, 0, 0, 0.4);
     font-size: 35px;
-    line-height: 100%;
     align-self: flex-start;
     margin: 0;
 }
@@ -95,19 +103,26 @@ span {
 }
 
 .contact-text {
+    color: #ffffffd7;
     font-family: "Fira Sans";
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 34px;
     letter-spacing: -0.02em;
-    color: #ffffffd7;
+    
+}
+
+::placeholder {
+    font-family: "Fira Sans";
+    color: #000000;
+	padding-left: 10px;
+    padding-top: 10px;
 }
 
 
 
-
-/* || Containers and div elements */
+/* || Header */
 
 .big-blue-box {
     background-color: #C7DDEA;
@@ -117,6 +132,13 @@ span {
     padding: 20px;
     padding-bottom: 0;
 }
+
+.picture-family {
+    width: 97%;
+    max-width: 342px;
+    height: auto;
+    align-self: flex-end;
+  }
 
 .red-box,
 .orange-box {
@@ -129,24 +151,29 @@ span {
     min-height: 315px;
 }
 
-/* kan man göra så med *? --->>> va mer spec*/
-
 .red-box h3{
     margin: 0;
+}
+
+.red-box {
+    background-color: #F17949;
 }
 
 .orange-box h3 {
     margin: 0;
 }
   
-.red-box {
-    background-color: #F17949;
-}
-
 .orange-box {
     background-color: #FAB131;
 }
 
+.nav-bar  {
+    display: none;
+}
+
+
+
+/* || Main */
 
 .grey-box,
 .faces {
@@ -180,7 +207,6 @@ span {
     margin-bottom: 50px;
 }
 
-
 .avatar {
     width: 236px;
     height: 150px;
@@ -189,6 +215,24 @@ span {
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 10px;
+}
+
+.boy  {
+    background-color: #C7DDEA;
+    background-image: url(img/child.png);
+    background-size: 40%;
+}
+
+.woman {
+    background-color: #FAB131;
+    background-image: url(img/adult.png);
+    background-size: 40%;
+}
+
+.grandpa {
+    background-color: #F17949;
+    background-image: url(img/old.png);
+    background-size: 65%;
 }
 
 .yellow-box {
@@ -237,46 +281,32 @@ span {
 }
 
 
+
+/* || Footer */
+
 .footer {
     background-color: #777574;
     min-height: 218px;
 }
 
-.coordinates {
-    background-color: #FAB131;
-    height: fit-content;
-    margin: 0;
-    padding: 20px;
-    color:rgba(255, 255, 255, 0.8);
-}
-
-.map  {
-    background-image: url(img/Rectangle6.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* || Navigation, buttons and inputs */
-
-.nav-bar  {
+.take-me-up {
     display: none;
 }
 
-.btn {
-    width: 129px;
-    height: 29px;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 100px;
-    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
-    font-weight: bold;
-    font-size: 10px;
-    margin: 30px 0;
-  } 
+
+
+/* || Contact HTML */
+
+.contact-header {
+    text-align: center;
+}
+
+.dad-son {
+    width: 60%;
+    max-width: 100px;
+    height: auto;
+    align-self: center;
+  }
 
 .email,
 .message-field  {
@@ -294,48 +324,32 @@ span {
     margin-bottom: -20px;
 }
 
-.take-me-up {
-    display: none;
+.address    {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-/* || Pictures */
-
-.picture-family {
-    width: 97%;
-    max-width: 342px;
-    height: auto;
-    align-self: flex-end;
-  }
-
-.boy  {
-    background-color: #C7DDEA;
-    background-image: url(img/child.png);
-    background-size: 40%;
-}
-
-.woman {
+.coordinates {
     background-color: #FAB131;
-    background-image: url(img/adult.png);
-    background-size: 40%;
+    height: fit-content;
+    margin: 0;
+    padding: 0 20px;
+    color:rgba(255, 255, 255, 0.8);
+    text-align: center;
 }
 
-.grandpa {
-    background-color: #F17949;
-    background-image: url(img/old.png);
-    background-size: 65%;
+.map  {
+    background-image: url(img/Rectangle6.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
 }
 
-.pointer {
-    width: 30px;
-    margin-bottom: 40px;
-}  
 
-.dad-son {
-    width: 60%;
-    max-width: 100px;
-    height: auto;
-    align-self: center;
-  }
+
 
 
 /* || Desktop version */
@@ -355,8 +369,21 @@ span {
 
     }
 
+    .btn    {
+        margin-left: 10%;
+    }
 
-    /* || Grid */
+
+
+    /* || Typography align */
+
+    .description  {
+        margin: 0 30% 2% 10%;
+    }
+
+   
+
+    /* || Header */
 
     .header {
         display: grid;
@@ -365,42 +392,53 @@ span {
         margin: auto;
     }
 
-    header.big-blue-box {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto; 
-        margin: auto;
+    .big-blue-box  {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        padding-bottom: 0;
     }
 
-    .steps  {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
+    .picture-family {
+        width: 80%;
     }
 
-    .steps > div {
-        padding: 10%;
-        box-sizing: content-box;
+
+
+    /* || Nav */
+
+    .nav-bar    {
         display: flex;
-        justify-content: flex-start;
+    }
+
+    .main-nav  {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        padding: 0;
+        list-style-type: none;        
+    }
+
+    li a  {
+        margin: 30px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 12px;
+        opacity: 0.7;
+    }
+
+    li a:hover    {
+        color: #000000;
     }
 
 
-/* Hur gör man 1 rad? */
+
+    /* || Main */
 
     .grey-box   {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
-    }
-
-
-    /* || Containers and div elements */
-
-    .big-blue-box  {
-        grid-column: 1;
-        grid-row: 1 / span 2;
-        padding-bottom: 0;
     }
 
     .grey-box  h2   {
@@ -458,49 +496,22 @@ span {
         margin: 0 20%;
     }
 
-    /* || Typography align */
-
-    .description  {
-        margin: 0 30% 2% 10%;
+    .steps  {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
     }
 
-    .contact-header {
-        grid-column: 1 / span 2;
-        margin: 0;
-        text-align: right;
-    }
-
-
-    /* || Navigation, buttons and inputs */
-
-    .btn    {
-        margin-left: 10%;
-    }
-
-    .nav-bar    {
+    .steps > div {
+        padding: 10%;
+        box-sizing: content-box;
         display: flex;
+        justify-content: flex-start;
     }
 
-    .main-nav  {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: auto;
-        padding: 0;
-        list-style-type: none;        
-    }
 
-    li a  {
-        margin: 30px;
-        line-height: 50px;
-        text-align: center;
-        font-size: 12px;
-        opacity: 0.7;
-    }
 
-    li a:hover    {
-        color: #000000;
-    }
+    /* || Footer */
 
     .take-me-up {
         background-color: #A9A19E;
@@ -514,15 +525,71 @@ span {
     }    
 
 
-    /* || Pictures */
 
-    .picture-family {
-        width: 80%;
+    /* || Contact HTML */
+ 
+    header.big-blue-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto; 
+        margin: auto;
     }
-    
+
+    .contact-header {
+        grid-column: 1 / span 2;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
     .dad-son  {
         grid-column: 3;
         margin: 0 25%;
     }
+    
+    .contact-box h2	{
+        grid-column: 1;
+        grid-row: 1;
+        margin: 15% 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mail {
+        grid-column: 2;
+        grid-row: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .message {
+        grid-column: 2;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    .message.btn {
+        margin: 12% 25%;
+        align-self: flex-end;
+    }
+
+    .email,
+    .message-field  {
+        width: 300px;
+    }
+
+
+    .map  {
+        background-size: 100%;
+        width: 100%;
+    }
+
 
 }
