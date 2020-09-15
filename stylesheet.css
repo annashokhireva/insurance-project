@@ -251,9 +251,9 @@ span {
 }
 
 .map  {
-    height: 200px;
     background-image: url(img/Rectangle6.png);
     background-size: 100%;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
