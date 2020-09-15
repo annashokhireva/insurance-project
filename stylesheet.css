@@ -1,0 +1,528 @@
+/* || GENERAL STYLES */
+
+body {
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+}
+
+:is(h1, h2, h3, h4, h5) {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+}
+
+p   {
+    font-family: "Fira Sans", sans-serif;
+}
+
+a   {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* || Typography */
+
+.black  {
+    color: #000000;
+ }
+
+.white  {
+    color: #FFFFFF;
+}
+
+.big-header {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.contact-header {
+    align-self: center;
+    line-height: 45px;
+}
+
+.sub-header {
+    font-size: 32px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+.topic-header {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: bold;
+    margin: 30px 0 0 0;
+}
+
+.numbers  {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 35px;
+    line-height: 100%;
+    align-self: flex-start;
+    margin: 0;
+}
+
+.description  {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+.specification {
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+    padding: 0 20px;
+} 
+
+.tiny-text {
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.instructions {
+    font-size: 17px;
+    line-height: 20px;
+    margin: 20px 60px;
+}
+
+span {
+    color: #FFFFFF;
+}
+
+.contact-text {
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    color: #ffffffd7;
+}
+
+
+
+
+/* || Containers and div elements */
+
+.big-blue-box {
+    background-color: #C7DDEA;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.red-box,
+.orange-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    min-height: 315px;
+}
+
+/* kan man göra så med *? --->>> va mer spec*/
+
+.red-box h3{
+    margin: 0;
+}
+
+.orange-box h3 {
+    margin: 0;
+}
+  
+.red-box {
+    background-color: #F17949;
+}
+
+.orange-box {
+    background-color: #FAB131;
+}
+
+
+.grey-box,
+.faces {
+    height: fit-content;   
+    padding: 5%;
+    background-color: #A9A19E;
+    margin: 0;
+}
+
+.faces  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.avatar-box {
+    width: 256px;
+    height: fit-content;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.faces .specification   {
+    margin-bottom: 50px;
+}
+
+
+.avatar {
+    width: 236px;
+    height: 150px;
+    border-radius: 4px;
+    margin: -20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 10px;
+}
+
+.yellow-box {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 35px 90px 35px;
+    background-color:#FAB131;
+    text-align: center;
+}
+
+.steps > div {
+    min-height: 170px;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.steps .instructions    {
+    margin: auto;
+}
+
+.small-blue-box {
+    background-color: #C7DDEA;
+}
+
+.box-1,
+.box-3,
+.box-5  {
+    background-color: #FFFFFF;
+}
+
+.box-2  {
+    background-color: #EBEBEB;
+}
+
+.box-4  {
+    background-color: #F17949;
+}
+
+
+.footer {
+    background-color: #777574;
+    min-height: 218px;
+}
+
+.coordinates {
+    background-color: #FAB131;
+    height: fit-content;
+    margin: 0;
+    padding: 20px;
+    color:rgba(255, 255, 255, 0.8);
+}
+
+.map  {
+    height: 200px;
+    background-image: url(img/Rectangle6.png);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* || Navigation, buttons and inputs */
+
+.nav-bar  {
+    display: none;
+}
+
+.btn {
+    width: 129px;
+    height: 29px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 10px;
+    margin: 30px 0;
+  } 
+
+.email,
+.message-field  {
+    background: #FEFEFE;
+    border-radius: 2px;
+    border: none; 
+    width: auto;
+    width: 200px;
+    padding: 10px;
+}
+
+.message-field  {
+    height: 166px;
+    text-align: start;
+    margin-bottom: -20px;
+}
+
+.take-me-up {
+    display: none;
+}
+
+/* || Pictures */
+
+.picture-family {
+    width: 97%;
+    max-width: 342px;
+    height: auto;
+    align-self: flex-end;
+  }
+
+.boy  {
+    background-color: #C7DDEA;
+    background-image: url(img/child.png);
+    background-size: 40%;
+}
+
+.woman {
+    background-color: #FAB131;
+    background-image: url(img/adult.png);
+    background-size: 40%;
+}
+
+.grandpa {
+    background-color: #F17949;
+    background-image: url(img/old.png);
+    background-size: 65%;
+}
+
+.pointer {
+    width: 30px;
+    margin-bottom: 40px;
+}  
+
+.dad-son {
+    width: 60%;
+    max-width: 100px;
+    height: auto;
+    align-self: center;
+  }
+
+
+/* || Desktop version */
+
+@media only screen and (min-width: 650px)   {
+    
+    /* || GENERAL STYLES */
+
+    body  {
+       background-color: #E5E5E5;
+       margin: 0 100px;
+    }
+
+    h1 {
+        margin: 10%;
+        margin-bottom: 20px;
+
+    }
+
+
+    /* || Grid */
+
+    .header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto; 
+        margin: auto;
+    }
+
+    header.big-blue-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto; 
+        margin: auto;
+    }
+
+    .steps  {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .steps > div {
+        padding: 10%;
+        box-sizing: content-box;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+
+/* Hur gör man 1 rad? */
+
+    .grey-box   {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+
+    /* || Containers and div elements */
+
+    .big-blue-box  {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        padding-bottom: 0;
+    }
+
+    .grey-box  h2   {
+        margin: 10%;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .grey-box .btn  {
+        margin-top: -5%;
+        margin-bottom: 10%;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .grey-box .description  {
+        width: fit-content;
+        margin: 10%;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .faces  {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: -20%;
+        padding: 0 5%;
+    }
+
+    .avatar-box  {
+        margin: 20px;
+        max-width: 230px;
+        width: auto;
+    }
+
+    .avatar   {
+        width: 90%;
+        height: 120px;
+        border-radius: 4px;
+        margin: -20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: 10px;
+    }
+
+    .yellow-box {
+        padding: 20% 0;
+        text-align: center;
+    }
+
+    .yellow-box p   {
+        margin: 0 20%;
+    }
+
+    /* || Typography align */
+
+    .description  {
+        margin: 0 30% 2% 10%;
+    }
+
+    .contact-header {
+        grid-column: 1 / span 2;
+        margin: 0;
+        text-align: right;
+    }
+
+
+    /* || Navigation, buttons and inputs */
+
+    .btn    {
+        margin-left: 10%;
+    }
+
+    .nav-bar    {
+        display: flex;
+    }
+
+    .main-nav  {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        padding: 0;
+        list-style-type: none;        
+    }
+
+    li a  {
+        margin: 30px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 12px;
+        opacity: 0.7;
+    }
+
+    li a:hover    {
+        color: #000000;
+    }
+
+    .take-me-up {
+        background-color: #A9A19E;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none; 
+    }    
+
+
+    /* || Pictures */
+
+    .picture-family {
+        width: 80%;
+    }
+    
+    .dad-son  {
+        grid-column: 3;
+        margin: 0 25%;
+    }
+
+}
