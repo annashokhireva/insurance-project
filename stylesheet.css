@@ -303,7 +303,7 @@ span {
 
 .dad-son {
     width: 60%;
-    max-width: 100px;
+    max-width: 150px;
     height: auto;
     align-self: center;
   }
@@ -572,7 +572,7 @@ address    {
 
     .contact-header {
         grid-column: 1 / span 2;
-        margin-right: 15px;
+        margin-right: 0;
         margin-bottom: 10%;
         display: flex;
         justify-content: flex-end;
