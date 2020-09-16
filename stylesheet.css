@@ -379,7 +379,7 @@ address    {
 
     body  {
        background-color: #E5E5E5;
-       max-width: 900px;
+       max-width: 1000px;
        margin: auto;
     }
 
@@ -481,7 +481,7 @@ address    {
     }
 
     .grey-box .btn  {
-        margin-top: -5%;
+        margin-top: -15%;
         margin-bottom: 10%;
         grid-column: 1;
         grid-row: 2;
@@ -527,7 +527,7 @@ address    {
     }
 
     .yellow-box p   {
-        margin: 0 20%;
+        margin: 0 25%;
     }
 
     .steps  {
@@ -571,9 +571,9 @@ address    {
 
     .contact-header {
         grid-column: 1 / span 2;
-        margin: 0;
+        margin-right: 0;
         display: flex;
-        justify-content: flex-end;
+        justify-content: stretch;
         align-items: center;
     }
 
@@ -582,6 +582,10 @@ address    {
         margin: 0 25%;
     }
     
+    .contact-box    {
+        padding-right: 15%;
+    }
+
     .contact-box h2	{
         grid-column: 1;
         grid-row: 1;
