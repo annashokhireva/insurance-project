@@ -379,13 +379,13 @@ address    {
 
     body  {
        background-color: #E5E5E5;
-       margin: 0 100px;
+       max-width: 900px;
+       margin: auto;
     }
 
     h1 {
         margin: 10%;
         margin-bottom: 20px;
-
     }
 
     .btn    {
