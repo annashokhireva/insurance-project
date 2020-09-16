@@ -324,6 +324,7 @@ span {
     width: auto;
     min-width: 200px;
     padding: 10px;
+    resize: none;
 }
 
 .message-field  {
@@ -571,9 +572,10 @@ address    {
 
     .contact-header {
         grid-column: 1 / span 2;
-        margin-right: 0;
+        margin-right: 15px;
+        margin-bottom: 10%;
         display: flex;
-        justify-content: stretch;
+        justify-content: flex-end;
         align-items: center;
     }
 
