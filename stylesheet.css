@@ -134,21 +134,21 @@ span {
 }
 
 .picture-family {
-    width: 97%;
-    max-width: 342px;
+    max-width: 286px;
     height: auto;
     align-self: flex-end;
+    margin: 0;
+    
   }
 
 .red-box,
 .orange-box {
     width: 100%;
-    height: auto;
+    padding: 30% 0;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    min-height: 315px;
 }
 
 .red-box h3{
@@ -415,11 +415,24 @@ address    {
         grid-column: 1;
         grid-row: 1 / span 2;
         padding-bottom: 0;
+        height: fit-content;
+    }
+
+    .big-blue-box .btn {
+        margin-bottom: 0;
     }
 
     .picture-family {
-        width: 80%;
+        width: 70%;
+        margin-top: -10%;
     }
+
+    .red-box,
+    .orange-box {
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }    
 
 
 
@@ -427,6 +440,7 @@ address    {
 
     .nav-bar    {
         display: flex;
+        justify-content: space-between;
     }
 
     .main-nav  {
@@ -439,7 +453,7 @@ address    {
     }
 
     li a  {
-        margin: 30px;
+        margin: 30px 60px;
         line-height: 50px;
         text-align: center;
         font-size: 12px;
